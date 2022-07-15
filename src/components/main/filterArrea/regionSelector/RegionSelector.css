@@ -1,0 +1,88 @@
+.region-selector {
+  height: 80%;
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.region-selector__text {
+  font-size: 1.8rem;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.region-selector__text__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: brown;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.region-selector__text__btn--dark {
+  background-color: brown;
+  color: white;
+}
+
+.region-selector__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  cursor: pointer;
+}
+
+.region-selector--dark {
+  background-color: rgb(75, 76, 76);
+}
+
+.region-selector--dark .region-selector__icon {
+  filter: invert(100%);
+}
+
+@media (max-width: 1100px) {
+  .region-selector {
+    width: 20%;
+  }
+
+  .region-selector__text {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .region-selector {
+    width: 30%;
+  }
+
+  .region-selector__text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .region-selector {
+    width: 40%;
+  }
+
+  .region-selector__text {
+    font-size: 1.5rem;
+  }
+}

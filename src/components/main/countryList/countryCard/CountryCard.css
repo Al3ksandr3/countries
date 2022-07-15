@@ -1,0 +1,63 @@
+.country-card {
+  width: 20%;
+  height: 65%;
+  margin: 2.5%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.country-card--dark {
+  background-color: rgb(75, 76, 76);
+  color: white;
+}
+
+.country-card__info {
+  width: 100%;
+  height: 55%;
+  padding: 1rem;
+}
+
+.country-card__flag {
+  height: 45%;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.country-card__info__name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.country-card__info__adInfo {
+  font-size: 1.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1100px) {
+  .country-card {
+    width: 30%;
+    margin: 1.5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .country-card {
+    width: 40%;
+    margin: 5%;
+  }
+}
+
+@media (max-width: 450px) {
+  .country-card {
+    width: 90%;
+    margin: 5%;
+    height: 65%;
+  }
+}

@@ -1,0 +1,44 @@
+.country-list {
+  position: relative;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 1rem;
+  overflow-y: auto;
+}
+
+.country-list__message,
+.country-list__error {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.country-list__error {
+  color: red;
+}
+
+.country-list__message--dark {
+  color: beige;
+}
+
+.country-list__error--dark {
+  color: brown;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gold;
+  border-radius: 5px;
+}

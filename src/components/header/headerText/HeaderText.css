@@ -1,0 +1,28 @@
+.headerText {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .headerText {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerText {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .headerText {
+    font-size: 1.3rem;
+  }
+}

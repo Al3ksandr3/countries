@@ -1,0 +1,38 @@
+.regions-list {
+  list-style-type: none;
+  position: absolute;
+  top: 200%;
+  width: 120%;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 10;
+  border: 1px solid black;
+}
+
+.regions-list li {
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.regions-list li:hover {
+  background-color: black;
+  color: white;
+}
+
+.regions-list :last-child {
+  border-bottom: none;
+}
+
+.regions-list--dark {
+  background-color: rgb(75, 76, 76);
+  border: 1px solid white;
+}
+
+.regions-list--dark li:hover {
+  background-color: white;
+  color: black;
+}
